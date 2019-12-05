@@ -6,3 +6,10 @@ sudo apt install git
 
 # Install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+
+# Open port in ubuntu
+sudo netstat -ntlp | grep LISTEN
+
+# Kill process in a port
+sudo kill $(sudo lsof -t -i:PORT)
