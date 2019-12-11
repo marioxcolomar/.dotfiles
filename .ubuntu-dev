@@ -23,5 +23,3 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 # Update and install yarn
 sudo apt update
 sudo apt install yarn
-# If nvm is already installed use
-sudo apt install --no-install-recommends yarn
