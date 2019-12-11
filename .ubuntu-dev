@@ -10,9 +10,18 @@ sudo apt-get install git-flow
 # Install nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
-
 # Open port in ubuntu
 sudo netstat -ntlp | grep LISTEN
 
 # Kill process in a port
 sudo kill $(sudo lsof -t -i:PORT)
+
+# Installing yarn
+# Add repos
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# Update and install yarn
+sudo apt update
+sudo apt install yarn
+# If nvm is already installed use
+sudo apt install --no-install-recommends yarn
