@@ -23,3 +23,13 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 # Update and install yarn
 sudo apt update
 sudo apt install yarn
+
+# Getting rid of old crash report
+sudo rm /var/crash/*
+
+# Get rid of error pop up
+sudo gedit /etc/default/apport &
+# And then change enable to 0
+enable=0
+# Temporarily override apport
+sudo service apport start force_start=1
