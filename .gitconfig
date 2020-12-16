@@ -5,3 +5,5 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 # In config file
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	
+	meLog = git log --author="Mario Coloma" --pretty=format:"%h - %an, %ar : %s"
