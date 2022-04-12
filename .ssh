@@ -12,9 +12,14 @@ sudo apt-get install xclip
 
 # Copy public key
 xclip -sel clip < ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub # Linux
+clip < ~/.ssh/id_rsa.pub # Windows
 
 # Add global user.name to git
 git config --global user.name
 
 # Add global user.email to git
 git config --global user.email
+
+# Test authentication
+ssh -T git@github.com
