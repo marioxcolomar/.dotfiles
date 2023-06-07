@@ -37,3 +37,4 @@ sudo service apport start force_start=1
 // swap fn with left ctrl
 // works on 20.04 and 22.04
 echo 1 | sudo tee /sys/module/hid_apple/parameters/swap_fn_leftctrl
+sudo update-initramfs -u
