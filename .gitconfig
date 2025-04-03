@@ -1,6 +1,20 @@
 # From http://garmoncheg.blogspot.com/2012/06/pretty-git-log.html
+# From https://blog.gitbutler.com/how-git-core-devs-configure-git/
 # From terminal
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+git config --global column.ui auto
+git config --global branch.sort -committerdate
+git config --global tag.sort version:refname
+git config --global init.defaultBranch main
+git config --global push.default simple # (default since 2.0)
+git config --global push.autoSetupRemote true
+git config --global push.followTags true
+git config --global fetch.prune true
+git config --global fetch.pruneTags true
+git config --global fetch.all true
+git config --global help.autocorrect prompt
+git config --global commit.verbose true
+
 
 # In config file
 [alias]
