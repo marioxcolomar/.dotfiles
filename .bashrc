@@ -2,6 +2,7 @@
 alias clc='clear'
 alias gp='git pull'
 alias gdev='git checkout dev'
+alias gm='git checkout main'
 alias glone='git log --oneline'
 alias gs='git status'
 
